@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
     );
   }
 
-  for (let i = 0; i < amount; i += 0) {
+  for (let i = 0; i < amount; i++) {
     createPromise(i, delay + step * i)
       .then(({ position, delay }) => {
         Notiflix.Notify.success(
